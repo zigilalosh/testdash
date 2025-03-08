@@ -489,3 +489,12 @@
                     React.createElement(Tooltip, { content: React.createElement(CustomTooltip) }),
                     React.createElement(Legend),
                     React.createElement(Bar, {
+
+  // Render the dashboard to the root element
+  document.addEventListener('DOMContentLoaded', function() {
+    ReactDOM.render(
+      React.createElement(AmazonDashboard),
+      document.getElementById('root')
+    );
+  });
+})(); // Close the self-invoking function
